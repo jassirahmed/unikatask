@@ -1054,6 +1054,17 @@ ul.imp-links li a {
     transform: rotate(-45deg);
 }
 
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.copyright span {
+    font-size: 20px;
+    margin-left: 10px;
+}
 
 @media only screen and (max-width: 768px) {
     .header {
