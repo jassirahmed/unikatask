@@ -1086,7 +1086,7 @@ ul.imp-links li a {
     .nav-bar-block {
         display: block;
         position: absolute;
-        top: 59%;
+        top: 60.2%;
         left: 50%;
         transform: translate(-50%, -50%);
         max-width: 670px;
@@ -1099,7 +1099,7 @@ ul.imp-links li a {
     }
 
     .menu-bar li {
-        padding: 13px 0;
+        padding: 12px 0;
         height: 100%;
     }
 
