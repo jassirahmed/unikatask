@@ -1067,6 +1067,11 @@ ul.imp-links li a {
         max-width: 100%;
     }
 
+    .active1 {
+        border-color: transparent !important;
+        color: #fff !important;
+    }
+
     .nav-png {
         align-items: center;
         display: flex;
@@ -1094,6 +1099,7 @@ ul.imp-links li a {
 
     .menu-bar li {
         padding: 13px 0;
+        height: 100%;
     }
 
     .btn-menu-bar {
@@ -1145,11 +1151,13 @@ ul.imp-links li a {
     .portfolio-menu button {
         padding: 0px;
         margin: 0px 5px;
+        margin-bottom: 10px;
     }
 
     .portfolio-menu {
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 10px;
     }
 
     .element-item {
@@ -1253,5 +1261,15 @@ ul.imp-links li a {
     .panel-box-featured {
         box-shadow: none;
         transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .row {
+        margin: 0px;
+    }
+
+    .team-items .col-md-2 {
+        width: 50%;
     }
 }
