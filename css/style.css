@@ -633,6 +633,7 @@ blockquote cite {
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.4;
+    color: #363940;
 }
 
 .team-items .col-md-2 {
@@ -1271,5 +1272,11 @@ ul.imp-links li a {
 
     .team-items .col-md-2 {
         width: 50%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .team-items .col-md-2 {
+        width: 100%;
     }
 }
