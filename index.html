@@ -33,26 +33,26 @@
                 </div>
                 <div class="col nav-bar" id="nav-bar">
                     <ul class="menu-bar">
-                        <li class="active">
-                            <a href="#" class="page-scroll">HOME</a>
+                        <li class="active1" id="nav1">
+                            <a href="#header" class="page-scroll">HOME</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">ABOUT</a>
+                        <li class="" id="nav2">
+                            <a href="#about-section" class="page-scroll">ABOUT</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">SERVICES</a>
+                        <li class="" id="nav3">
+                            <a href="#service-section" class="page-scroll">SERVICES</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">WORKS</a>
+                        <li class="" id="nav4">
+                            <a href="#potfolio-section" class="page-scroll">WORKS</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">TEAM</a>
+                        <li class="" id="nav5">
+                            <a href="#team-section" class="page-scroll">TEAM</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">PRICES</a>
+                        <li class="" id="nav6">
+                            <a href="#price-section" class="page-scroll">PRICES</a>
                         </li>
-                        <li class="">
-                            <a href="#" class="page-scroll">CONTACT</a>
+                        <li class="" id="nav7">
+                            <a href="#contact-section" class="page-scroll">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -62,37 +62,24 @@
     <section class="hero-section parallax" id="carousel-section" data-stellar-background-ratio="0.5">
         <div class="container hero-container">
             <div class="caption text-center text-white">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active rotation-btn" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            class="rotation-btn" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            class="rotation-btn" aria-label="Slide 3"></button>
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h1 class="hero-h1">WE HAVE AWESOME THINGS</h1>
+                        <p class="hero-p">Let's make the web beautiful together</p>
+                        <div class="extra-space-1"></div>
+                        <button class="hero-btn">View More!</button>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="d-block w-100">
-                                <h1 class="hero-h1">WE HAVE AWESOME THINGS</h1>
-                                <p class="hero-p">Let's make the web beautiful together</p>
-                                <button class="hero-btn">View More!</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-block w-100">
-                                <h1 class="hero-h1">JOIN WITH US</h1>
-                                <p class="hero-p">To the greatest journey</p>
-                                <button class="hero-btn">View More!</button>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="d-block w-100">
-                                <h1 class="hero-h1">I'M UNIKA</h1>
-                                <p class="hero-p">One Page Responsive Theme</p>
-                                <button class="hero-btn">View More!</button>
-                            </div>
-                        </div>
+                    <div class="item">
+                        <h1 class="hero-h1">JOIN WITH US</h1>
+                        <p class="hero-p">To the greatest journey</p>
+                        <div class="extra-space-1"></div>
+                        <button class="hero-btn">View More!</button>
+                    </div>
+                    <div class="item">
+                        <h1 class="hero-h1">I'M UNIKA</h1>
+                        <p class="hero-p">One Page Responsive Theme</p>
+                        <div class="extra-space-1"></div>
+                        <button class="hero-btn">View More!</button>
                     </div>
                 </div>
             </div>
@@ -324,7 +311,7 @@
                 </div>
                 <div class="container">
                     <div class="testimonial-inner center-block text-center">
-                        <div class="owl-carousel owl-theme owl-loaded">
+                        <div id="testimonialCarousel" class="owl-carousel owl-theme owl-loaded">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage">
                                     <div class="owl-item">
@@ -693,7 +680,7 @@
                 </div>
             </div>
         </div>
-        <div class="extra-space-1"></div>
+        <div class=".extra-space-1"></div>
         <div class="container">
             <div class="row">
                 <div class="price-box col-sm-6 col-md-3 wow flipInY animated" data-wow-delay="0.3s">
@@ -738,9 +725,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="price-box col-sm-6 price-box-featured col-md-3 wow flipInY animated" data-wow-delay="0.7s">
-                    <div class="panel panel-default">
-                        <div class="panel-heading text-center">
+                <div class="price-box col-sm-6 col-md-3 wow flipInY animated" data-wow-delay="0.7s">
+                    <div class="panel panel-box-featured">
+                        <div class="panel-heading panel-heading-box text-center">
                             <i class="fa fa-star fa-2x"></i>
                             <h3>Professional</h3>
                         </div>
@@ -961,21 +948,38 @@
     <!-- <script src="js/stellar.js-master/jquery.stellar.min.js"></script> -->
     <script>
         window.onload = document.getElementById("page-loader").style.display = "none";
-        new WOW()
-            .init();
+        new WOW().init();
+
+        $("#owl-demo").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoPlay: 1000,
+            items: 1,
+        });
 
         var owl = $('#owl-partners');
         owl.owlCarousel({
             loop: true,
             items: 4,
-            margin: 10,
+            margin: 0,
             autoplay: true,
             autoplayTimeout: 1000,
             autoplayHoverPause: false,
             dots: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 4,
+                }
+            }
         });
 
-        $('.owl-carousel').owlCarousel({
+        $('#testimonialCarousel').owlCarousel({
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -1035,7 +1039,8 @@
             // set selected class on button
             if (hashFilter) {
                 $filterButtonGroup.find('.active').removeClass('active');
-                $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
+                $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass(
+                    'active');
             }
         }
 
@@ -1043,16 +1048,14 @@
 
         $('.counter').counterUp({
             delay: 10,
-            time: 3000,
-            offset: 70,
-            beginAt: 100,
+            time: 2000,
         })
-        $(function () {
-            $.stellar({
-                horizontalScrolling: 40,
-                verticalOffset: 150
-            });
-        });
+        // $(function () {
+        //     $.stellar({
+        //         horizontalScrolling: 40,
+        //         verticalOffset: 150
+        //     });
+        // });
         $(document).ready(function () {
             $("#ul-block").click(function () {
                 $("#nav-bar").toggleClass("nav-bar-block");
@@ -1067,6 +1070,57 @@
             } else {
                 $(".scrolltotop").removeClass("scrolltotop-none");
             }
+
+            $(window).scroll(function () {
+                var scrollPosition = $(window).scrollTop();
+                //get the position of the containers
+                var one = $("#header").offset().top,
+                    two = $("#about-section").offset().top,
+                    three = $("#service-section").offset().top,
+                    four = $("#potfolio-section").offset().top,
+                    five = $("#team-section").offset().top,
+                    six = $("#price-section").offset().top,
+                    seven = $("#contact-section").offset().top;
+
+                var nav1 = $("#nav1"),
+                    nav2 = $("#nav2"),
+                    nav3 = $("#nav3"),
+                    nav4 = $("#nav4"),
+                    nav5 = $("#nav5"),
+                    nav6 = $("#nav6"),
+                    nav7 = $("#nav7");
+
+
+
+                if (scrollPosition >= one) {
+                    nav1.siblings().removeClass("active1");
+                    nav1.addClass("active1");
+                }
+                if (scrollPosition >= two) {
+                    nav2.siblings().removeClass("active1");
+                    nav2.addClass("active1");
+                }
+                if (scrollPosition >= three) {
+                    nav3.siblings().removeClass("active1");
+                    nav3.addClass("active1");
+                }
+                if (scrollPosition >= four) {
+                    nav4.siblings().removeClass("active1");
+                    nav4.addClass("active1");
+                }
+                if (scrollPosition >= five) {
+                    nav5.siblings().removeClass("active1");
+                    nav5.addClass("active1");
+                }
+                if (scrollPosition >= six) {
+                    nav6.siblings().removeClass("active1");
+                    nav6.addClass("active1");
+                }
+                if (scrollPosition >= seven) {
+                    nav7.siblings().removeClass("active1");
+                    nav7.addClass("active1");
+                }
+            });
         });
     </script>
 
