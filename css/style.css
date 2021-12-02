@@ -1058,7 +1058,9 @@ ul.imp-links li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0px;
+    line-height: 30px;
 }
 
 .copyright span {
