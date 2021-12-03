@@ -112,18 +112,17 @@ div {
 }
 
 .active1 {
-    border-top: 2px solid #fff !important;
+    box-shadow: inset 0 3px #fff !important;
+    color: white;
 }
 
-.active1 a {
-    color: #fff;
-}
 
 .page-scroll {
     color: #a9a9a9;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
+    padding: 24px 0px;
 }
 
 .menu-bar .page-scroll:hover {
